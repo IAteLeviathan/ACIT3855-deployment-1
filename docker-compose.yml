@@ -73,7 +73,7 @@ services:
     volumes:
      - ./configs/processor:/config
   audit_log:
-    image: audit-log
+    image: audit_log
     ports:
       - "8200:8200"
     hostname: audit_log
