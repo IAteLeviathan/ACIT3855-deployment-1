@@ -72,15 +72,15 @@ services:
       - "db"
     volumes:
      - ./configs/processor:/config
-  audit-log:
+  audit_log:
     image: audit-log
     ports:
       - "8200:8200"
-    hostname: audit-log
+    hostname: audit_log
     depends_on:
       - "kafka"
     volumes:
-     - ./configs/audit-log:/config
+     - ./configs/audit_log:/config
 # Names our volume
 volumes:
   my-db:
